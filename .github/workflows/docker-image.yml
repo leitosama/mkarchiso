@@ -2,6 +2,7 @@ name: Build to Docker Hub
 
 on: 
   push:
+    - paths: 'Dockerfile'
   schedule:
     - cron: '0 0 * * 6'
 
