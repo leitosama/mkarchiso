@@ -2,9 +2,11 @@ name: Build to Docker Hub
 
 on: 
   push:
-    - paths: 'Dockerfile'
+    paths: 
+      - 'Dockerfile'
   schedule:
     - cron: '0 0 * * 6'
+  workflow_dispatch: 
 
 env:
   REGISTRY: ghcr.io
